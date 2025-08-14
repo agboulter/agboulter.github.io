@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+<title> Ashleigh Boulter</title>
+<style>
+    body{
+        background-color: rgb(169, 189, 169)
+    }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!--This is for the navigation bar of my page-->
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li> 
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Worksamples.html">Work Samples</a></li>
+            <li><a href="teaching.html">Teaching Philosophy</a></li>
+            </li>
+        </ul>
+    </nav>
+    <!--This is for the main parts of this page-->
+<main>
+    <!--This is for the introduction section of my page-->
+    <div class = "Introduction">
+        <h1 style="font-size: 50px"> My Teaching Portfolio</h1>
+        <h2 style="font-size:30px"> Ashleigh Boulter - Secondary TAS Teacher</h2>
+        <h3> 2026 Australian Catholic University Graduate - Bachelor of Education (Secondary)</h3>
+    </div>
+      
+    <!-- This is for a more detailed introduction of myself-->
+    <div class="Introduction2">
+        <div>
+        <a href="about.html">
+            <img src="images/Profile.png" alt="Ashleigh Boulter, Third Year university student profile image in a circle frame" width="200" height="200" alt="Smiling woman with shoulder-length brown hair wearing a blue shirt, facing the camera. She is seated indoors with a bookshelf and plants in the background. The atmosphere is warm and welcoming.">
+        </a>
+        </div>
+
+        <div>
+        <h3>About Me</h3>
+        <p>
+            <ol>
+                <li>I am a 3rd year university student studying Education, majoring in design and technologies.</li>
+                <li>In my spare time, I love going to the gym and getting outdoors, either running or playing soccer.</li>
+                <li>I have had 3 years work experience as an SLSO, working with a wide range of students and developing learning resources to support effective learning </li>
+            </ol>
+        </p>
+        </div>
+    </div>
+    <!-- This is to display an overview of my information - in flexbox format-->
+    <section>
+    <style>
+                .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                .project-card {
+                    flex:1 1 150px;
+                    background-color:rgb(226, 245, 220);
+                    border: 1px solid rgb(1, 72, 1);
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                }
+
+                .project-card img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                    align-items: center;
+                }
+
+                .project-card h2 {
+                    margin-top: 10px;
+                    font-size: 1.1rem;
+                    color: rgb(72, 90, 81);
+                }
+            </style>
+        <div class = "flex-container"> 
+        
+        <div class = "project-card">
+        <img src="images/design.png" alt="Bachelor of Education (Secondary)/Bachelor of Arts (Design Innovations and Technologies) image">
+        <h3> Bachelor of Education (Secondary)/Bachelor of Arts (Design Innovations and Technologies)</h3>
+        <p> In 2026, I will complete and obtain a bachelor's degree in Secondary Education, majoring in Industrial technology and design. This degree has equipped me with the skills to teach all TAS areas</p>
+        </div>
+
+        <div class = "project-card">
+        <img src="images/experience.png" alt="Professional Experience image">
+        <h3>Professional Experience</h3>
+        <p> 
+            <ul>
+                <li><strong>2023-Ongoing:</strong> SLSO role at Crestwood High School</li>
+                <li><strong>2024: </strong> Practicum at The Hills Sports High School [15 days]</li>
+                <li><strong>2024: </strong> Practicum at St John Paul's II Catholic College [15 days]</li>
+                <li><strong>2025: </strong> Practicum at Quakers Hill High School [15 days]</li>
+            </ul>
+        </p>
+        </div>
+            
+        <div class="project-card">
+        <img src="images/philosophy.png" alt="Teaching Philosophy image">
+        <h3>Teaching Philosophy</h3>
+        <p>All students bring unique identities, abilities, opinions, backgrounds, and attitudes to the classroom. I believe the classroom should be a safe environment where positive behaviours are modelled, supporting both academic and social growth. I endeavour to approach teaching with an open mind, modelling the skills and behaviours I wish to develop in my students, while remaining open to new learning opportunities.</p>
+    </div>
+</section>
+    </div>
+
+</main>
+</body>
+
+<!-- This is the footer for my webpages-->
+<div class="Footer"><footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li> 
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Worksamples.html">Work Samples</a></li>
+            <li><a href="teaching.html">Teaching Philosophy</a></li>
+            </li>
+        </ul>
+    </nav>
+    <p style="text-align: center;">© 2024 Ashleigh Boulter. All rights reserved.</p>
+</footer>
+</div>
+</html>

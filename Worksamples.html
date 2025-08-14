@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+<title> Ashleigh Boulter</title>
+<style>
+    body{
+        background-color: rgb(169, 189, 169)
+    }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!--This is for the navigation bar of my page-->
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li> 
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Worksamples.html">Work Samples</a></li>
+            <li><a href="teaching.html">Teaching Philosophy</a></li>
+            </li>
+        </ul>
+    </nav>
+
+    <!--This is for the main parts of this page-->
+    <main>
+        <!--This section is focused on showcasing projects I have made - in Flexbox format-->
+        <section>
+            <style>
+                .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                .project-card {
+                    flex:1 1 150px;
+                    background-color:rgb(226, 245, 220);
+                    border: 1px solid rgb(1, 72, 1);
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1)
+                }
+
+                .project-card img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 4px;
+                }
+
+                .project-card h2 {
+                    margin-top: 10px;
+                    font-size: 1.1rem;
+                    color: rgb(72, 90, 81);
+                }
+            </style>
+            <div class="flex-container">
+                <div class="project-card">
+                    <img src="images/heirloom.jpg" alt="Wooden heirloom box with cloud veneer pattern">
+                    <h2>Heirloom Box</h2>
+                    <p>Wooden Heirloom box, designed for construction by stage 5 students</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/stool.jpg" alt="Wooden storage stool with shell upholstory">
+                    <h2>Wooden Storage Stool</h2>
+                    <p>Wooden stool, designed for construction by stage 4 students</p>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/bookcaselamp.jpg" alt="Wooden lamp desiged into a geometric bookcase">
+                    <h2>Bookcase Lamp</h2>
+                    <p>Bookcase lamp, designed for construction by stage 4 and 5 students</p>
+                </div>
+                
+                <div class="project-card">
+                    <img src="images/hammer.jpeg" alt="Metal jewellery hammer with acrylic handle">
+                    <h2>Metal Jewellery Hammer</h2>
+                    <p>Metal Jewellery Hammer, designed for construction by stage 5 students</p>
+                </div>
+            </div>    
+        </section>
+    </main>
+    </body>
+
+
+<!-- This is the footer for my webpages-->
+    <div class="Footer"><footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li> 
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Worksamples.html">Work Samples</a></li>
+            <li><a href="teaching.html">Teaching Philosophy</a></li>
+            </li>
+        </ul>
+    </nav>
+    <p style="text-align: center;">© 2024 Ashleigh Boulter. All rights reserved.</p>
+</footer>
+</div>
