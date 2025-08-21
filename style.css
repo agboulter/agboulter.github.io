@@ -1,9 +1,24 @@
 
+body{
+        background-color: rgb(169, 189, 169);
+        font-family: Cambria, sans-serif; 
+        padding:0%;
+        margin:0%;
+    }
+h1 {
+        text-align: center; 
+    }
+h2{
+        font-family: Cambria, sans-serif;
+    }
+
 .Introduction {
     background-image: url(images/banner.png);
     background-size: cover;
     color: rgb(47, 47, 59);
     text-align: center;
+    margin: 0%;
+    padding: 10px;
 }
 
 .Introduction2{
@@ -14,12 +29,14 @@
 
 .Introduction2 > div {
     flex: 0 1 auto;
-    margin-left: 8px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .Footer {
     background-image: url(images/banner.png);
     background-size: cover;
+    padding-top: 30px;
 }
 
 .ashleighboulter{
@@ -27,8 +44,155 @@
     justify-content: center;
     align-items: center;
 }
-
 .ashleighboulter > div {
     flex: 0 1 auto;
     margin-left: 8px;
+}
+
+.main-content {
+    margin:10px;
+}
+
+.montage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.montage > div {
+    flex: 0 1 auto;
+    margin: 10px;
+}
+
+nav {
+background: #6f8570; /* Dark grey background for nav bar */
+font-size: 0.95rem; /* Slightly smaller font in navigation */
+width: 100%; /* Spans full width */
+margin: auto; /* Space above page content; no top gap */
+margin-top: 0; /* Removes top gap above nav */
+border-radius: 10px; /* Slightly rounded corners */
+box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+nav .container {
+width: min(100% - 2*var(--spacing), var(--maxw)); /* Responsive container width
+*/
+margin: 0 auto; /* Centers content
+horizontally */
+display: flex; /* Layout: brand/left + links/right (if
+needed) */
+align-items: center; /* Centers nav items */
+justify-content: space-between; /* Distribute items on the main axis with
+equal gaps between them; first/last items flush to container edges */
+}
+
+nav ul {
+list-style: none; /* Removes bullets */
+display: flex; /* Horizontal layout */
+gap: 10px; /* Fixed space between links */
+margin: 0; /* Removes margin */
+padding: 0; /* Removes padding */
+}
+
+nav a {
+display: block; /* Larger click target */
+color: white; /* White link text */
+text-decoration: none; /* Remove underline/other decorations from text/links */
+padding: 14px 16px; /* Space inside link area */
+border-radius: 10px; /* Slightly rounded corners */
+}
+
+nav a:hover {
+background: rgba(255,255,255,0.15); /* Light background on hover */
+}
+nav a:focus-visible {
+outline: 2px solid #fff; /* white outline for increased
+accessibility/ keyboard-focus styling */
+outline-offset: 2px; /* outline offset for increased
+accessibility/ keyboard-focus styling */
+}
+
+.active {
+background-color: rgb(83, 97, 81); /* Indicates active page link */
+}
+
+@media (max-width: 640px) { /* responsiveness for viewing on mobile
+*/
+nav .container { flex-wrap: wrap; }
+
+nav ul { width: 100%; justify-content: center; }
+}
+
+.flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-between;
+                    margin: 20px;
+                }
+                .project-card {
+                    flex:1 1 150px;
+                    background-color:rgb(226, 245, 220);
+                    border: 1px solid rgb(1, 72, 1);
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1)
+                }
+
+                .project-card img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+
+                .project-card h2 {
+                    margin-top: 10px;
+                    font-size: 1.1rem;
+                    color: rgb(72, 90, 81);
+                }
+
+
+form {
+display: grid; /* Grid layout for form elements */
+gap: 0px; /* Space between form items */
+}
+label {
+font-weight: 600; /* Semi-bold labels */
+}
+input[type="text"], input[type="email"], textarea {
+width: auto; /* Full width fields */
+padding: 10px 12px; /* Internal spacing */
+border: 1px solid #d4d7dd; /* Light border */
+border-radius: 10px; /* Rounded corners */
+background: #fff; /* White background */
+transition: border-color 0.2s, box-shadow 0.2s; /* Smooth focus effect */
+}
+input:focus, textarea:focus {
+outline: none; /* Removes default outline */
+border-color: var(--brand); /* Brand border on focus */
+box-shadow: 0 0 0 3px rgba(28,76,150,0.15); /* Glow on focus */
+}
+textarea {
+min-height: 140px; /* Minimum height */
+resize: vertical; /* Only resize vertically */
+width: auto;
+}
+button, input[type="submit"] {
+background: var(--brand); /* Brand colour */
+color: rgb(0, 0, 0); /* White text */
+background-color: #6f8570;
+border: none; /* No border */
+padding: 10px 16px; /* Internal spacing */
+border-radius: 10px; /* Rounded corners */
+cursor: pointer; /* Pointer on hover */
+}
+button:hover, input[type="submit"]:hover {
+background: #17652c; /* Darker brand colour on hover */
+}
+.error {
+color: red;
+font-size: 0.85rem;
+display: block;
+margin-top: 5px;
 }

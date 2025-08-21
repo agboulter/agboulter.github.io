@@ -3,18 +3,6 @@
 
 <head>
 <title> Ashleigh Boulter</title>
-<style>
-    body{
-        background-color: rgb(169, 189, 169);
-        font-family: Cambria, sans-serif; 
-    }
-    h1 {
-        text-align: center; 
-    }
-    h2{
-        font-family: Cambria, sans-serif;
-    }
-</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
@@ -24,24 +12,28 @@
     <main>
         <!-- This section contains my nav bar-->
         <section>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li> 
+            <li><a class="active" href="about.html">About Me</a></li> 
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="Worksamples.html">Work Samples</a></li>
             <li><a href="teaching.html">Teaching Philosophy</a></li>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     </section>
 
-<!-- This section contains all of the details about myself, including university and outside university-->
-    <section>
-<div class="Introduction">
-   <h1 style="color: rgb(41, 41, 41)">About Me </h1>  <!-- Heading of About page in purple colour --> 
+    <header>
+ <div class="Introduction">
+   <h1>About Me </h1>  <!-- Heading of About page in purple colour --> 
     </div>
+</header>
+
+<!-- This section contains all of the details about myself, including university and outside university-->
+<section class="main-content">   
+<section>
 
    <div class="ashleighboulter">
    <div>
@@ -51,22 +43,32 @@
    <div>
    <h2>Ashleigh Boulter</h2>
    <p> My name is Ashleigh. I am a third year university student studying secondary education at Australian Catholic University. My specialisation areas include Design and Technologies, Industrial Technology, and Computing Technolgies. I have completed three out of four placement opportunities at a range of schools, including both department of education, and catholic diocese schools.</p>  <!-- Paragraph explaining professional information --> 
-   </div>
+  <p>Further information on my course:<a href="https://www.acu.edu.au/course/bachelor-of-education-secondarybachelor-of-arts-design-innovation-and-technologies"> Bachelor of Education (Secondary)/Bachelor of Arts (Design innovation and technologies)</a></p>  <!-- Link to degree information --> 
+  </div>
    </div>
 
-   <p>Further information on my course:</p><a href="https://www.acu.edu.au/course/bachelor-of-education-secondarybachelor-of-arts-design-innovation-and-technologies"> Bachelor of Education (Secondary)/Bachelor of Arts (Design innovation and technologies)</a>  <!-- Link to degree information --> 
-   
-   <h2>Who am I?</h2>
-   <p><i> Outside of university, I have many interests, including various areas of fitness. I enjoy going to the gym 2-3 times a week around my univeristy schedule, as well as swimming and running once a week, my goal is to be able to run a half marathon soon! During winter, I enjoy playing soccer on a Sunday afternoon. In addition to this, I am a creative individual who enjoys reading and doing art in my spare time.</i></p> <!-- Paragraph explaining personal interests -->
-   </section>
+   <div class="montage">
+    <div>
+      <h2>Who am I?</h2>
+      <p><i> Outside of university, I have many interests, including various areas of fitness. I enjoy going to the gym 2-3 times a week around my univeristy schedule, as well as swimming and running once a week, my goal is to be able to run a half marathon soon! During winter, I enjoy playing soccer on a Sunday afternoon. In addition to this, I am a creative individual who enjoys reading and doing art in my spare time.</i></p> <!-- Paragraph explaining personal interests -->
+    </div>
+
+   <div>
+      <h2>Some photos!</h2>
+    <!--to be made into a slideshow using JS eventually-->
+      <slide>
+        <img src="images/sunset.jpg" width="100" height="100" alt="Sunset with trees in the foreground">
+        <img src="images/water.jpg" width="100" height="100" alt="Beach with a cloudy background">
+      </slide>
+    </div>
+   </div>
 
    <!-- This section is my practicum placement overview in a table format -->
   <section>
     <style>
       table {
         width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
+        border-collapse: collapse;;
         font-family: Arial, san-serif;
       }
 
@@ -132,20 +134,21 @@
       </tbody>
     </table>
   </section>
+</section>
 </main>
 </body>
 
 <!-- This is the footer for my webpages-->
 
-<div class="Footer"><footer>
+<footer><div class="Footer">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li> 
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="Worksamples.html">Work Samples</a></li>
             <li><a href="teaching.html">Teaching Philosophy</a></li>
+            <li><a href="contact.html">Contact</a></li>
             </li>
         </ul>
     </nav>

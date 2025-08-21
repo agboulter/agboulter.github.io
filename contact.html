@@ -3,11 +3,6 @@
 
 <head>
 <title> Ashleigh Boulter</title>
-<style>
-    body{
-        background-color: rgb(169, 189, 169)
-    }
-</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
@@ -20,12 +15,55 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li> 
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="Worksamples.html">Work Samples</a></li>
             <li><a href="teaching.html">Teaching Philosophy</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
             </li>
         </ul>
     </nav>
+
+    <header>
+ <div class="Introduction">
+   <h1>Contact Me </h1>  <!-- Heading of contact page --> 
+    </div>
+</header>
+
+<section>
+    <div class="contact-info">
+        
+        <!-- This is a flex container that contains my contact details and a submission form-->
+        <div class="flex-container">
+            <div class="project-card">
+        <h1>Get in Touch</h1>
+        <p style="text-align: center; font-style: italic;">If you have any questions or would like to connect, feel free to reach out!</p>        
+        <h3 style="text-align:center;"> You can reach me via phone or email, I will endeavour to respond within 1-2 days.</h3>
+        <p><strong>Email: </strong> <a href="mailto:S00344555@myacu.edu.au">S00344555@myacu.edu.au</a></p>
+        <p><strong>Phone: </strong> 0412 254 332 </p>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/WutVGp398aBGwkbF6">25A Barker Road, Strathfield</a></p>
+        <embed src="https://www.google.com/maps?q=25A+Barker+Road,+Strathfield&output=embed" width="100%" height="300" style="border: 0px;" />
+        </div>
+                <div class="project-card">
+        
+        <!-- This creates a form for enquiries to be entered (Needs JS still)-->
+         <h1 style="text-align: left;">Alternatively, fill out this form!</h1>
+        <form action= "mailto:S00344555@myacu.edu.au" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            
+            <input type="submit" value="Submit" onclick="this.form.reset(); return false;">
+        
+        </form>
+        </div>
+        </div>
+    </div>
+
+</section>
 
 <!-- This is the footer for my webpages-->
     <div class="Footer"><footer>
@@ -34,10 +72,9 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li> 
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="Worksamples.html">Work Samples</a></li>
             <li><a href="teaching.html">Teaching Philosophy</a></li>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <p style="text-align: center;">© 2024 Ashleigh Boulter. All rights reserved.</p>

@@ -3,10 +3,6 @@
 
 <head>
 <title> Ashleigh Boulter</title>
-<style>
-    body{
-        background-color: rgb(169, 189, 169)
-    }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -20,46 +16,23 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li> 
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="Worksamples.html">Work Samples</a></li>
+            <li><a class="active" href="Worksamples.html">Work Samples</a></li>
             <li><a href="teaching.html">Teaching Philosophy</a></li>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <header>
+ <div class="Introduction">
+   <h1>Work Samples</h1>  <!-- Heading of Samples page--> 
+    </div>
+</header>
 
     <!--This is for the main parts of this page-->
     <main>
         <!--This section is focused on showcasing projects I have made - in Flexbox format-->
         <section>
-            <style>
-                .flex-container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    justify-content: space-between;
-                    margin-top: 20px;
-                }
-                .project-card {
-                    flex:1 1 150px;
-                    background-color:rgb(226, 245, 220);
-                    border: 1px solid rgb(1, 72, 1);
-                    padding: 15px;
-                    border-radius: 8px;
-                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1)
-                }
-
-                .project-card img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 4px;
-                }
-
-                .project-card h2 {
-                    margin-top: 10px;
-                    font-size: 1.1rem;
-                    color: rgb(72, 90, 81);
-                }
-            </style>
+           
             <div class="flex-container">
                 <div class="project-card">
                     <img src="images/heirloom.jpg" alt="Wooden heirloom box with cloud veneer pattern">
@@ -93,16 +66,17 @@
 <!-- This is the footer for my webpages-->
     <div class="Footer"><footer>
     <nav>
-        <ul>
+        <ul>            
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li> 
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="Worksamples.html">Work Samples</a></li>
             <li><a href="teaching.html">Teaching Philosophy</a></li>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <p style="text-align: center;">© 2024 Ashleigh Boulter. All rights reserved.</p>
+    <p style="text-align: center; font-size: 10px;">© 2024 Ashleigh Boulter. All rights reserved.</p>
 </footer>
 </div>
+
+</html>
