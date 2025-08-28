@@ -37,6 +37,8 @@ h2{
     background-image: url(images/banner.png);
     background-size: cover;
     padding-top: 30px;
+    align-items: center;
+    text-align: center;
 }
 
 .ashleighboulter{
@@ -50,7 +52,10 @@ h2{
 }
 
 .main-content {
-    margin:10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .montage {
@@ -65,6 +70,16 @@ h2{
     margin: 10px;
 }
 
+.link {
+    color: rgb(49, 63, 45);
+    text-decoration: none;
+
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
 nav {
 background: #6f8570; /* Dark grey background for nav bar */
 font-size: 0.95rem; /* Slightly smaller font in navigation */
@@ -76,12 +91,9 @@ box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 nav .container {
-width: min(100% - 2*var(--spacing), var(--maxw)); /* Responsive container width
-*/
-margin: 0 auto; /* Centers content
-horizontally */
-display: flex; /* Layout: brand/left + links/right (if
-needed) */
+width: min(100% - 2*var(--spacing), var(--maxw)); /* Responsive container width*/
+margin: 0 auto; /* Centers content horizontally */
+display: flex; /* Layout: brand/left + links/right (if needed) */
 align-items: center; /* Centers nav items */
 justify-content: space-between; /* Distribute items on the main axis with
 equal gaps between them; first/last items flush to container edges */
@@ -186,6 +198,7 @@ border: none; /* No border */
 padding: 10px 16px; /* Internal spacing */
 border-radius: 10px; /* Rounded corners */
 cursor: pointer; /* Pointer on hover */
+align-items: center;
 }
 button:hover, input[type="submit"]:hover {
 background: #17652c; /* Darker brand colour on hover */
@@ -196,3 +209,4 @@ font-size: 0.85rem;
 display: block;
 margin-top: 5px;
 }
+

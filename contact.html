@@ -12,12 +12,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li> 
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="Worksamples.html">Work Samples</a></li>
-            <li><a href="teaching.html">Teaching Philosophy</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
+            <li class="container"><a href="index.html">Home</a></li>
+            <li class="container"><a href="about.html">About Me</a></li> 
+            <li class="container"><a href="projects.html">Resume</a></li>
+            <li class="container"><a href="Worksamples.html">Work Samples</a></li>
+            <li class="container"><a href="teaching.html">Teaching Philosophy</a></li>
+            <li class="container"><a class="active" href="contact.html">Contact</a></li>
             </li>
         </ul>
     </nav>
@@ -28,6 +28,7 @@
     </div>
 </header>
 
+<main class="main-content">
 <section>
     <div class="contact-info">
         
@@ -48,13 +49,13 @@
          <h1 style="text-align: left;">Alternatively, fill out this form!</h1>
         <form action= "mailto:S00344555@myacu.edu.au" method="post" enctype="text/plain">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required><br>
             
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" placeholder="name@email.com" required><br>
             
             <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea><br>
             
             <input type="submit" value="Submit" onclick="this.form.reset(); return false;">
         
@@ -64,19 +65,20 @@
     </div>
 
 </section>
+</main>
 
 <!-- This is the footer for my webpages-->
     <div class="Footer"><footer>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li> 
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="Worksamples.html">Work Samples</a></li>
-            <li><a href="teaching.html">Teaching Philosophy</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="container"><a href="index.html">Home</a></li>
+            <li class="container"><a href="about.html">About Me</a></li> 
+            <li class="container"><a href="projects.html">Resume</a></li>
+            <li class="container"><a href="Worksamples.html">Work Samples</a></li>
+            <li class="container"><a href="teaching.html">Teaching Philosophy</a></li>
+            <li class="container"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <p style="text-align: center;">© 2024 Ashleigh Boulter. All rights reserved.</p>
+    <p style="text-align: center;">© 2025 Ashleigh Boulter. All rights reserved.</p>
 </footer>
 </div>
