@@ -133,7 +133,11 @@ background-color: rgb(83, 97, 81); /* Indicates active page link */
 */
 nav .container { flex-wrap: wrap; }
 
-nav ul { width: 100%; justify-content: center; }
+nav ul { 
+    width: 100%; 
+    justify-content: center;
+    flex-wrap: wrap;
+ }
 
 nav a { 
     padding: 10px;
@@ -145,12 +149,14 @@ nav a {
 .flex-container {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 20px;
+                    gap: 2vw;
                     justify-content: space-between;
-                    margin: 20px;
+                    margin: 2vw;
                 }
                 .project-card {
-                    flex:1 1 150px;
+                    flex:1 1 300px;
+                    box-sizing: border-box;
+                    min-width: 280px;
                     background-color:rgb(226, 245, 220);
                     border: 1px solid rgb(1, 72, 1);
                     padding: 15px;
@@ -170,16 +176,30 @@ nav a {
                     color: rgb(72, 90, 81);
                 }
 
+                .project-card form {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 form {
 display: grid; /* Grid layout for form elements */
 gap: 0px; /* Space between form items */
+width: 100%;
 }
 label {
 font-weight: 600; /* Semi-bold labels */
 }
 input[type="text"], input[type="email"], textarea {
-width: auto; /* Full width fields */
+width: 100%; /* Full width fields */
+box-sizing: border-box;
 padding: 10px 12px; /* Internal spacing */
 border: 1px solid #d4d7dd; /* Light border */
 border-radius: 10px; /* Rounded corners */
@@ -190,11 +210,12 @@ input:focus, textarea:focus {
 outline: none; /* Removes default outline */
 border-color: var(--brand); /* Brand border on focus */
 box-shadow: 0 0 0 3px rgba(28,76,150,0.15); /* Glow on focus */
+width: 100%;
 }
 textarea {
 min-height: 140px; /* Minimum height */
 resize: vertical; /* Only resize vertically */
-width: auto;
+width: 100%;
 }
 button, input[type="submit"] {
 background: var(--brand); /* Brand colour */
