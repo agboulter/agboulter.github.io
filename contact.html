@@ -47,7 +47,10 @@
         
         <!-- This creates a form for enquiries to be entered (Needs JS still)-->
          <h1 style="text-align: left;">Alternatively, fill out this form!</h1>
-        <form action= "https://formsubmit.co/agboulter@gmail.com" method="post" enctype="text/plain">
+        <form id="context-form" action= "https://formsubmit.co/agboulter@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+            <legend>Your Details</legend>
+
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Jane Doe" required><br>
             
@@ -58,6 +61,7 @@
             <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea><br>
             
             <input type="submit" value="Submit" onclick="this.form.reset(); return false;">
+            </fieldset>
         
         </form>
         </div>
