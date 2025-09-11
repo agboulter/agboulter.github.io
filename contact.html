@@ -35,11 +35,15 @@
         <!-- This is a flex container that contains my contact details and a submission form-->
         <div class="flex-container">
             <div class="project-card">
+        <!--Contact information section with phone number, email and university map-->
         <h1>Get in Touch</h1>
         <p style="text-align: center; font-style: italic;">If you have any questions or would like to connect, feel free to reach out!</p>        
         <h3 style="text-align:center;"> You can reach me via phone or email, I will endeavour to respond within 1-2 days.</h3>
+        <!--Email-->
         <p><strong>Email: </strong> <a href="mailto:S00344555@myacu.edu.au">S00344555@myacu.edu.au</a></p>
+        <!--Phone-->
         <p><strong>Phone: </strong> 0412 254 332 </p>
+        <!--Location-->
         <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/WutVGp398aBGwkbF6">25A Barker Road, Strathfield</a></p>
         <embed src="https://www.google.com/maps?q=25A+Barker+Road,+Strathfield&output=embed" width="100%" height="40vw" style="border: 0; max-width: 100%; min-height: 200px;" />
         </div>
@@ -50,18 +54,18 @@
         <form id="contact-form" action="https://formsubmit.co/2cf2b6fb7638b0df734ca61d1493f2a6" method="post" autocomplete="on">
             <fieldset>
             <legend>Your Details</legend>
-
+            <!--Input for name-->
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Jane Doe" required><br>
-            
+            <!--Input for email-->
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" placeholder="name@email.com" required><br>
-            
+            <!--Textbox input for the message-->
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea><br>
-
+            <!--Honeypot field to prevent spam-->
             <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px">
-            
+            <!--Submit button-->
             <button type="submit">Send</button>
             </fieldset>
         

@@ -1,17 +1,18 @@
 
 body{
-        background-color: rgb(169, 189, 169);
-        font-family: Cambria, sans-serif; 
-        padding:0%;
-        margin:0%;
+        background-color: rgb(169, 189, 169); /* Light grey background */
+        font-family: Cambria, sans-serif; /*Font type*/
+        padding:0%; /* Removes default padding */
+        margin:0%; /* Removes default margin */
     }
 h1 {
-        text-align: center; 
+        text-align: center; /* Centers all h1 elements */
     }
 h2{
-        font-family: Cambria, sans-serif;
+        font-family: Cambria, sans-serif; /*Font type*/
     }
 
+    /*Setting up banner for consistency across pages*/
 .Introduction {
     background-image: url(images/banner.png);
     background-size: cover;
@@ -21,6 +22,7 @@ h2{
     padding: 10px;
 }
 
+/*Flexbox and centre alignment*/
 .Introduction2{
     display:flex;
     justify-content: center;
@@ -33,6 +35,7 @@ h2{
     margin: 10px;
 }
 
+/*Setting up footer for consistency across pages*/
 .Footer {
     background-image: url(images/banner.png);
     background-size: cover;
@@ -41,6 +44,7 @@ h2{
     text-align: center;
 }
 
+/*Developing a flox box for my photo and information in home page*/
 .ashleighboulter{
     display:flex;
     justify-content: center;
@@ -51,6 +55,7 @@ h2{
     margin-left: 8px;
 }
 
+/* Creating margins for main content*/
 .main-content {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -58,6 +63,7 @@ h2{
     margin-right: 100px;
 }
 
+/*Flexbox for montage of images*/
 .montage {
     display: flex;
     justify-content: center;
@@ -70,6 +76,7 @@ h2{
     margin: 10px;
 }
 
+/* Link styling */
 .link {
     color: rgb(49, 63, 45);
     text-decoration: none;
@@ -131,6 +138,8 @@ background-color: rgb(83, 97, 81); /* Indicates active page link */
 
 @media (max-width: 640px) { /* responsiveness for viewing on mobile
 */
+
+/*Setting up nav components, including for smaller screens*/
 nav .container { flex-wrap: wrap; }
 
 nav ul { 
@@ -146,6 +155,7 @@ nav a {
     width: 100%;}
 }
 
+/* Main flexbox code for consistency across pages*/
 .flex-container {
                     display: flex;
                     flex-wrap: wrap;
