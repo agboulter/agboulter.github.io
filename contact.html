@@ -47,7 +47,7 @@
         
         <!-- This creates a form for enquiries to be entered -->
          <h1 style="text-align: left;">Alternatively, fill out this form!</h1>
-        <form id="context-form" action= "https://formsubmit.co/2cf2b6fb7638b0df734ca61d1493f2a6" method="post" enctype="text/plain">
+        <form id="contact-form" action="https://formsubmit.co/2cf2b6fb7638b0df734ca61d1493f2a6" method="post" autocomplete="on">
             <fieldset>
             <legend>Your Details</legend>
 
@@ -59,6 +59,8 @@
             
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea><br>
+
+            <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px">
             
             <button type="submit">Send</button>
             </fieldset>
