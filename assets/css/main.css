@@ -3066,3 +3066,26 @@ input, select, textarea {
 		#closeAlert:hover {
 			background-color: #425848;
 		}
+
+		.downloadImage {
+			display: inline-block;
+			width: auto;
+			height: auto;
+			margin: 0 0 2em 0;
+			border: solid 10px #425848;
+			box-sizing: border-box;
+			overflow: hidden;
+			border-radius: 0.3em;
+			img {
+				display: block;
+				object-fit: fill;
+			}
+		}
+
+
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
