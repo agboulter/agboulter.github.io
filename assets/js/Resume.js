@@ -1,4 +1,3 @@
-(function($) {
     document.getElementById('downloadResume').onclick = function() {
         const link = document.createElement('a');
         link.href = 'assets/Ashleigh_Boulter_Resume.pdf'; 
@@ -9,4 +8,3 @@
         
         showCustomAlert("Your download will start shortly.");
     };
-})(jQuery);

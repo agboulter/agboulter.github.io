@@ -1,4 +1,3 @@
-(function($) {
     document.getElementById('downloadFile399').onclick = function() {
         const EDET399 = document.createElement('a');
         EDET399.href = 'assets/Ashleigh_Boulter_EDET399.pdf';  
@@ -9,4 +8,3 @@
 
         showCustomAlert("Your download will start shortly.");
     };
-})(jQuery);
