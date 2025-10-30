@@ -2958,24 +2958,23 @@ input, select, textarea {
 	}
 
 	.profile {
-		height: 150px; 
-		width: 150px;
-		margin: 2em 0 0 0;
+		height: 150px; /* image sizing */
+		width: 150px;	/* image sizing */
+		margin: 2em 0 0 0;	/* relative image margin */
 	}
 
 	.box {
-		border: white 1px solid;
-		padding: 1em;
-		border-radius: 0.35em;
+		border: white 1px solid; /* box border separating content */
+		padding: 1em; /* small gap between border and content */
+		border-radius: 0.35em;	/* slight curve on border */
 	}
 
 	.buttons {
-		margin-top: 1em;
-		text-align: center;
+		margin-top: 1em; /* small gap between top of button and text */
+		text-align: center; /* button text alignment */
 	}
 
-	  		/* ...existing code... */
-		
+	/* custom alert styling */	
 		#customAlert {
 			position: fixed;
 			top: 0;
@@ -3009,44 +3008,45 @@ input, select, textarea {
 			color: white;
 			border: none;
 			border-radius: 4px;
-			cursor: pointer;
 		}
 		
 		#closeAlert:hover {
-			background-color: #425848;
+			background-color: #425848; /* change colour on hover */
 		}
 
+		/* image button styling */
 		.downloadImage {
 			display: inline-block;
 			width: auto;
 			height: auto;
 			margin: 0 auto 2em auto;
-			border: solid 10px #425848;
+			border: solid 10px #425848; /* small border around image for visibility */
 			box-sizing: border-box;
-			overflow: hidden;
+			overflow: hidden; /* hides excess image content */
 			border-radius: 0.3em;
 		}
 
 		.downloadImage:hover {
-			border: solid 10px #c7ffd6;
+			border: solid 10px #c7ffd6; /* change colour on hover */
 		}
 
 
-
+/* image styling within box features */
 .box img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+/* home page image styling */ 
 .banner {
 	display: block;
 	width: 50%;
 	margin: 0 auto 2em auto;
 	border: solid 10px #425848;
 	box-sizing: border-box;
-	overflow: hidden;
-	border-radius: 0.3em;
+	overflow: hidden; /* hides excess image content */
+	border-radius: 0.3em; /* slight border curve */
 }
 
 .banner img {
@@ -3056,18 +3056,18 @@ input, select, textarea {
 	object-fit: cover;     
 }
 
+/* montage button styling */
 .nav-button {
   position: absolute;
   top: 100%;                 /* halfway up the image */
-  transform: translateY(-50%);
-  background-color: rgba(111, 154, 124, 0.75);
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 0.5em;
-  width: 30px;
-  height: 30px;
+  transform: translateY(-50%); /* button positioning */
+  background-color: rgba(111, 154, 124, 0.75);  
+  color: white;		
+  border: none;			/* no button border */
+  border-radius: 50%;	/* creates a curve on the button */
+  font-size: 0.5em;		/* size of '>' arrows */
+  width: 30px;  		
+  height: 30px;			
 }
 
 /* left arrow */
@@ -3080,6 +3080,7 @@ input, select, textarea {
   right: 1px; /* fixed distance from the right edge */
 }
 
+/* montage styling */ 
 .montage {
   width: 90%;
   max-width: 600px;
@@ -3088,23 +3089,23 @@ input, select, textarea {
 }
 
 .montage img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+  width: 100%;			
+  height: 400px;			
+  object-fit: cover;		/* image covers section */
 }
 
 .montage-container {
   position: relative;       /* anchors buttons inside this box */
   width: 100%;              /* fills the sidebar section */
-  max-width: 400px;         /* optional, controls image size */
-  margin: auto;         /* keeps buttons inside edges */
+  max-width: 400px;         /* maximum image sizing */
+  margin: auto;         	/* keeps buttons inside edges */
   
 }
 
 .montage-container img {
-  width: 100%;
-  height: auto;             /* keeps proportions */
-  display: block;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 100%;				
+  height: auto;             
+  display: block;			
+  border-radius: 10px;		/* gives images a slight curve */
+  object-fit: cover;		
 }

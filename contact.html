@@ -17,12 +17,12 @@
 			<!-- Header -->
 				<section id="header" class="wrapper">
 
-					<!-- Logo -->
+					<!-- Page title in front of banner image -->
 						<div id="logo">
 							<h1><a href="index.html">Contact Me</a></h1>
 						</div>
 
-					<!-- Nav -->
+					<!-- Navigation bar -->
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
@@ -36,7 +36,7 @@
 
 				</section>
 
-			<!-- Main -->
+			<!-- Contact details section -->
 				<div id="main" class="wrapper style1">
 					<div class="title">My Details</div>
 					<div class="container">
@@ -48,39 +48,49 @@
 										<h2>Get in Touch</h2>
 										<p ><i>If you have any questions or would like to connect, feel free to reach out!</i></p>
 										<p >You can reach me via phone or email, I will endeavour to respond within 1-2 days.</p>
+										<!-- Email address, aligned to the left -->
 										<p style="text-align: left;"><strong>Email:</strong>S00344555@myacu.edu.au</p>
+										<!-- Phone number aligned to the left -->
                                         <p style="text-align: left;"><strong>Phone:</strong>0412 254 333</p>
+										<!-- Location aligned to left, location is a link to the google maps pin location-->
                                         <p style="text-align: left;"><strong>Location:</strong><a href= "https://maps.app.goo.gl/TRobEARHYgnQ7JxeA"> 25A Barker Road, Strathfield </a> </p>
-                                         <embed src="https://www.google.com/maps?q=25A+Barker+Road,+Strathfield&output=embed" width="100%" height="40vw" style="border: 0; max-width: 100%; min-height: 200px;" />
+                                        <!-- Embedded google maps -->
+										<embed src="https://www.google.com/maps?q=25A+Barker+Road,+Strathfield&output=embed" width="100%" height="40vw" style="border: 0; max-width: 100%; min-height: 200px;" />
 									</header>
 							</div>
 
 					</div>
 				</div>
 
-			<!-- Highlights -->
+			<!-- Contact form section -->
 				<div id="main" class="wrapper style2" >
 					<div class="title">Fill out the form!</div>
 					<div class="container">
 
-						<!-- Content -->
+						<!-- Contact form contained in box -->
 							<div id="content" >
 								<article class="box post">
 									<section>
+										<!-- Form name with FormSubmit backend function-->
 										<form name="contactMe" method="post" action="https://formsubmit.co/2cf2b6fb7638b0df734ca61d1493f2a6" onSubmit="return validateForm()">
 											<div class="row gtr-50">
 												<div class="col-6 col-12-small">
+													<!-- Form input for user name -->
 													<input type="text" name="name" id="contact-name" placeholder="Name" />
 												</div>
 												<div class="col-6 col-12-small">
+													<!-- Form input for user email address-->
 													<input type="text" name="email" id="contact-email" placeholder="Email" />
 												</div>
 												<div class="col-12">
+													<!-- Form input for user message -->
 													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
 												</div>
 												<div class="col-12">
 													<ul class="actions" style="text-align: center;">
+														<!-- Submit button to send through contact form-->
 														<li><input type="submit" class="style1" value="Submit" /></li>
+														<!-- Reset button to clear form -->
 														<li><input type="reset" class="style2" value="Reset" /></li>
 													</ul>
 
@@ -96,7 +106,7 @@
 
 						
 
-
+				<!-- Footer -->
 				<section id="footer" >
 					<div class="container">
 						<div id="copyright">
@@ -109,6 +119,8 @@
 
 
 		</div>
+
+		<!-- Hidden custom alert to be displayed if form validation fails, informing user of missing details -->
 
         <div id="customAlert" style="display:none;">
 			<div class="alert-content">

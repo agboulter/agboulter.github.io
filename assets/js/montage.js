@@ -1,3 +1,5 @@
+
+/* Array of images */
 const images = [
     'images/montage/montage1.jpg',
     'images/montage/montage2.png',
@@ -18,19 +20,24 @@ const images = [
     'images/montage/montage17.jpg',
 ]
 
+/* Default montage image set as first image in array */
 let currentIndex = 0;
 
+/* Change image function */
   function changeSlide(direction) {
       currentIndex += direction;
+      /* If the index goes below 0, display last image in array */
       if (currentIndex < 0) currentIndex = images.length - 1;
+      /* If the index goes over the total amount of images in the array, display the first image in thee array */
       if (currentIndex >= images.length) currentIndex = 0;
       document.getElementById("montageContainer").src = images[currentIndex];
     }
 
+    /* When the left button is clicked, display previous image in array */
 document.getElementById('left').onclick = function() {
   changeSlide(-1);
 }
-
+  /* When the right button is pressed, display the next image in array */
 document.getElementById('right').onclick = function() {
   changeSlide(1);
 }

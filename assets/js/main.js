@@ -65,14 +65,18 @@
 
 })(jQuery);
 
+
+/* Custom alert message pop-up */
 function showCustomAlert(message) {
     const alertBox = document.getElementById('customAlert');
     const alertMessage = document.getElementById('alertMessage');
     const closeButton = document.getElementById('closeAlert');
     
+	/* Display specified message */
     alertMessage.textContent = message;
     alertBox.style.display = 'flex';
     
+	/* Hide alert feature when close is pressed */
     closeButton.onclick = function() {
         alertBox.style.display = 'none';
     };
